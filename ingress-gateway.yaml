@@ -1,0 +1,26 @@
+
+#YAML comments all start with a #
+
+# If you want to write
+# a block-commented Haiku
+# you'll need three pound signs
+
+# A uniquely named Ingress for your namespace.
+
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: traefik
+  name: sock-shop-ingress
+  namespace: sock-shop
+spec:
+  rules:
+  - host: scratch.kube.pro
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: front-end
+          servicePort: 80

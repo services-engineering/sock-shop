@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carts-db
+  labels:
+    name: carts-db
+  namespace: sock-shop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: carts-db
+  template:
+    metadata:
+      labels:
+        name: carts-db
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: carts-db
+        image: mongo
+        ports:
+        - name: mongo
+          containerPort: 27017
+        command:
+            - mongod
+            - "--bind_ip"
+            - 0.0.0.0
+        securityContext:
+          capabilities:
+            drop:
+              - all
+            add:
+              - CHOWN
+              - SETGID
+              - SETUID
+        volumeMounts:
+        - name: mongodb-volume
+          mountPath: /data/db
+
+      volumes:
+        - name: mongodb-volume
+          emptyDir: {}
+      nodeSelector:
+        beta.kubernetes.io/os: linux

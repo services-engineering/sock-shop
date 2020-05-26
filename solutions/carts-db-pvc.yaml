@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+ name: mongo-pv-claim
+ namespace: sock-shop
+ labels:
+   app: carts-db
+spec:
+ storageClassName: fast
+ accessModes:
+   - ReadWriteOnce
+ resources:
+   requests:
+     storage: 5Gi
