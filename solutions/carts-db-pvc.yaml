@@ -6,7 +6,7 @@ metadata:
  labels:
    app: carts-db
 spec:
- storageClassName: fast
+ storageClassName: dynamic-nfs-d2iq
  accessModes:
    - ReadWriteOnce
  resources:
