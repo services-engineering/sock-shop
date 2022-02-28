@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- sock-shop-ns.yaml
+#- sock-shop-ns.yaml
 - carts-db-dep.yaml
 - carts-db-svc.yaml
 - carts-ms-dep.yaml
@@ -12,7 +12,7 @@ resources:
 - catalogue-ms-svc.yaml
 - front-end-dep.yaml
 - front-end-svc.yaml
-- ingress-gateway.yaml
+#- ingress-gateway.yaml
 - orders-db-dep.yaml
 - orders-db-svc.yaml
 - orders-ms-dep.yaml
