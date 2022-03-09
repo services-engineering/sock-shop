@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: kong
+  name: sock-shop-ingress
+  namespace: sock-shop
+spec:
+  rules:
+  - host: a8c11a15c1b1e4a23995c7c8b1462afd-e9e09c938c8566ac.elb.us-west-2.amazonaws.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: front-end
+          servicePort: 80
