@@ -4,7 +4,7 @@ metadata:
   name: payment
   labels:
     name: payment
-  namespace: client2
+  namespace: client3
 spec:
   ports:
     # the port that this service should serve on

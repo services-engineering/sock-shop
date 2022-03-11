@@ -4,10 +4,10 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: kong
   name: sock-shop-ingress
-  namespace: client2
+  namespace: client3
 spec:
   rules:
-  - host: client2.kube.pro
+  - host: client3.kube.pro
     http:
       paths:
       - path: /

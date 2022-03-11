@@ -4,7 +4,7 @@ metadata:
   name: front-end
   labels:
     name: front-end
-  namespace: client2
+  namespace: client3
 spec:
   ports:
   - port: 80

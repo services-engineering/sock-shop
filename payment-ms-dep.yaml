@@ -4,7 +4,7 @@ metadata:
   name: payment
   labels:
     name: payment
-  namespace: client2
+  namespace: client3
 spec:
   replicas: 1
   selector:
