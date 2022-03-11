@@ -4,7 +4,7 @@ metadata:
   name: carts-db
   labels:
     name: carts-db
-  namespace: sock-shop
+  namespace: client2
 spec:
   replicas: 1
   selector:

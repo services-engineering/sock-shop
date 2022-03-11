@@ -4,7 +4,7 @@ metadata:
   name: payment
   labels:
     name: payment
-  namespace: sock-shop
+  namespace: client2
 spec:
   replicas: 1
   selector:

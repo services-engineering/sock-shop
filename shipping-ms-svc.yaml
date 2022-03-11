@@ -4,7 +4,7 @@ metadata:
   name: shipping
   labels:
     name: shipping
-  namespace: sock-shop
+  namespace: client2
 spec:
   ports:
     # the port that this service should serve on
