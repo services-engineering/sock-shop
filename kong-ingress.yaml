@@ -7,7 +7,7 @@ metadata:
   namespace: sock-shop
 spec:
   rules:
-  - host: af66f6a9e408046ea8e4ab8c4d5062da-ca125f39c474b21b.elb.us-west-2.amazonaws.com
+  - host: client1.kube.pro
     http:
       paths:
       - path: /
