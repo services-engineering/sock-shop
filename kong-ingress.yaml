@@ -7,7 +7,7 @@ metadata:
   namespace: sock-shop
 spec:
   rules:
-  - host: a8c11a15c1b1e4a23995c7c8b1462afd-e9e09c938c8566ac.elb.us-west-2.amazonaws.com
+  - host: af66f6a9e408046ea8e4ab8c4d5062da-ca125f39c474b21b.elb.us-west-2.amazonaws.com
     http:
       paths:
       - path: /
