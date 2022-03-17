@@ -3,8 +3,7 @@ kind: Deployment
 metadata:
   name: carts-db
   labels:
-    name: carts-db
-  namespace: client3
+    name: carts-db 
 spec:
   replicas: 1
   selector:

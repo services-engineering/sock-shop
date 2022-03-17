@@ -4,7 +4,7 @@ metadata:
   name: catalogue
   labels:
     name: catalogue
-  namespace: client3
+  
 spec:
   replicas: 1
   selector:

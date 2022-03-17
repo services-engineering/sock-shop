@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
  name: mongo-pv-claim
- namespace: client3
+ 
  labels:
    app: carts-db
 spec:

@@ -4,7 +4,6 @@ metadata:
   name: orders
   labels:
     name: orders
-  namespace: client3
 spec:
   replicas: 3
   selector:

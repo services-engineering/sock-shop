@@ -4,7 +4,6 @@ metadata:
   name: shipping
   labels:
     name: shipping
-  namespace: client3
 spec:
   replicas: 1
   selector:
