@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 #- sock-shop-ns.yaml
 #- ingress-gateway.yaml
-- kong-ingress.yaml
+#- kong-ingress.yaml
 - carts-db-dep.yaml
 - carts-db-svc.yaml
 - carts-ms-dep.yaml
